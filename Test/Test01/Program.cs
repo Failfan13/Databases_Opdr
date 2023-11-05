@@ -42,15 +42,15 @@ class Program
                 case "Q4": Solution.q4Solution(context, new DateOnly(2022, 01, 13)); return;
                 case "Q5": Solution.q5Solution(context); return;
                 case "Q6": Solution.q6Solution(context, new DateOnly(2022, 1, 13)); return;
-                case "Q7A": Test.q7atest(context); return;
-                case "Q7B": Test.q7btest(context); return;
+                //case "Q7A": Test.q7atest(context); return;
+                //case "Q7B": Test.q7btest(context); return;
                 case "Q8A": Solution.q8aSolution(context); return;
                 case "Q8B":
-                    Test.q8aSolution(context);
+                    //Test.q8aSolution(context);
                     Solution.q8bSolution(context);
                     return;
                 case "ALL": openTest(context); return;
-                case "RESET": Test.ResetSchema(context); return;
+                //case "RESET": Test.ResetSchema(context); return;
                 default: throw new ArgumentException();
             }
         }
@@ -66,7 +66,7 @@ class Program
                 return;
             }
 
-            Test.ResetTables(dbContext);
+            //Test.ResetTables(dbContext);
 
             dbContext.roomType.AddRange(SeedData.SeedRoomType());
             dbContext.rooms.AddRange(SeedData.SeedRoom());
