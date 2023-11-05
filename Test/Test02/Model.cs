@@ -15,7 +15,7 @@ class ExamContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseNpgsql("User ID = postgres; Password = a; Host = localhost; port = 5432; Database = ExamDB2022RT; Pooling = true");
+        optionsBuilder.UseNpgsql("User ID = postgres; Password = a; Host = localhost; port = 5432; Database = postgres; Pooling = true");
         //optionsBuilder.LogTo(Console.WriteLine, Microsoft.Extensions.Logging.LogLevel.Debug);
         //optionsBuilder.EnableSensitiveDataLogging();
     }
