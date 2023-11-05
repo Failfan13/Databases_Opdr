@@ -68,7 +68,7 @@ class SeedData
                     .Where(_ => _.Length > 0)
                     .Select(_ => ParseBooking(_)).ToList();
         else
-            return File.ReadAllLines("./SeedData/bookingsHiddenTest.csv")
+            return File.ReadAllLines("./SeedData/bookings.csv")
             .Skip(1) //Header
             .Where(_ => _.Length > 0)
             .Select(_ => ParseBooking(_)).ToList();

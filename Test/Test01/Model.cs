@@ -9,8 +9,7 @@ class HotelContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        //optionsBuilder.UseNpgsql("User ID=postgres;Password=;Host=localhost;port=5432;Database=LocalPostgres;Pooling=true");
-        optionsBuilder.UseNpgsql(@"Host=localhost:5432;Username=postgres;Password=;Database=LocalDbtje;Pooling=true");
+        optionsBuilder.UseNpgsql("User ID=postgres;Password=;Host=localhost;port=5432;Database=TestDB;Pooling=true");
         //optionsBuilder.LogTo(System.Console.WriteLine, LogLevel.Critical);
     }
     protected override void OnModelCreating(ModelBuilder modelBuilder)

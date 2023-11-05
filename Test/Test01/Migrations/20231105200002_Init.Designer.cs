@@ -11,8 +11,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Test01.Migrations
 {
     [DbContext(typeof(HotelContext))]
-    [Migration("20231105154847_RecreateDB")]
-    partial class RecreateDB
+    [Migration("20231105200002_Init")]
+    partial class Init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
